@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --grahcolor: #cfcfcf;
+}
+/*------------------navbar setion styleing---------------------------*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 40px;
+    background: #fff;
+}
+.logo{
+    position: relative;
+    left: -17px
+}
+.logo a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4a1f0d
+}
+
+.nav-link {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+.icon-section {
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+}
+.icon-section i {
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+/* Hamburger hidden on desktop */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-link {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 40px;
+        display: none;
+    }
+
+    .nav-link.active {
+        display: flex;
+    }
+
+    .icon-section {
+        display: none;
+    }
+}
+/*-------------------------hero section styleing-----------------------*/
+
+.hero {
+    padding: 80px 0% 80px 8% ;
+    background-image: url(/assets/image/hero1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.badge {
+    display: inline-block;
+    background: #fff;
+    padding: 0.8rem 0.80rem;
+    border-radius: 1.75rem;
+    font-size: 0.80rem;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+/* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 480px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #4a1f0d;
+    color: #fff;
+    padding: 0.75rem 1.80rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero-btn:hover {
+    background: #361608;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+ .card-container {
+  padding: 40px 8%;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* COMMON CARD */
+.card {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+}
+
+/* LEFT BIG CARD */
+.card-one {
+  flex: 1 1 55%;
+  min-height: 500px;
+  background: url("/assets/image/card1.jpg") center/cover no-repeat;
+}
+
+/* RIGHT COLUMN */
+.box-two {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-two,
+.card-three {
+  min-height: 240px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-two {
+  background-image: url("/assets/image/card2.jpg");
+}
+
+.card-three {
+  background-image: url("/assets/image/card3.jpg");
+}
+
+/* TEXT */
+.card h2 {
+  font-weight: 400;
+}
+
+.card ul {
+  padding: 0;
+}
+
+.card ul li {
+  list-style: none;
+}
+
+.card ul li a {
+  text-decoration: none;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* BADGE */
+.badge-item {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  width: fit-content;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/*  MOBILE */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card-one,
+  .box-two {
+    flex: 1 1 100%;
+  }
+
+  .card-one {
+    min-height: 400px;
+  }
+}
+
+/*  SMALL MOBILE */
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card-one {
+    min-height: 320px;
+  }
+}
+/* top seller product section */
+.product-section{
+    border: 1px solid #361608;
+    padding: 40px 8%;
+}
+.product-section .product-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.product-content .title-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-section .title h3{
+    font-size: 1.50rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.subtitle p{
+    font-size: 1.15rem;
+    
+}
+.product-link ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap:1rem;
+}
+.product-link ul li,a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #361608;
+    
+}
+.product-link ul li{
+    border: 1px solid #361608;
+    padding: 4px 1.25rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+}
+
+.product-link ul li a:hover{
+    color: azure;
+}
+.product-link ul li:hover{
+    color: #fff;
+    background-color: #361608;
+}
+.card-product{
+    border: 1px solid red;
+}
+
