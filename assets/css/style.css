@@ -255,9 +255,9 @@
     min-height: 320px;
   }
 }
-/* top seller product section */
+
+/* -----------------------------------top seller product section -----------------------------*/
 .product-section{
-    border: 1px solid #361608;
     padding: 40px 8%;
 }
 .product-section .product-content{
@@ -306,7 +306,73 @@
     color: #fff;
     background-color: #361608;
 }
+/* ======================out top seller product carts=================== */
+.product-section .product-card{
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 2rem;
+}
 .card-product{
-    border: 1px solid red;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.50rem;
+    
+}
+.card-product .image-section{
+    background-color: #cfcfcf;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 23px;
+    height: 400px;
+}
+.card-product .image-section .bage-part{
+    color:green;
+    background-color: #fff;
+    width: 5.4rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-section .icon-part{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.50rem;
+}
+.image-section .icon-part .p-icon{
+    color: #361608;
+    background-color: #fff;
+    width: 1.50rem;
+    height: 1.50rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.25rem;
+}
+.card-product .product-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-info .par{
+    font-weight: 600;
+}
+.card-product .product-name{
+    color: #000;
+    font-size: larger;
+    font-weight: 600;
+}
+.card-product .product-price{
+    font-weight: 600;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-product .product-price span{
+    font-size: medium;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: line-through;
+    color: #cfcfcf;
 }
 
