@@ -5,16 +5,16 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
+const leftArrow = document.querySelector(".carousel-arrow.left");
+const rightArrow = document.querySelector(".carousel-arrow.right");
+const productCard = document.querySelector(".product-card");
 
-// const scrollAmount = 300; // how much to scroll per click
-// const leftBtn = document.querySelector('.scroll-btn.left');
-// const rightBtn = document.querySelector('.scroll-btn.right');
-// const productCard = document.querySelector('.product-card');
+const scrollAmount = 300; // pixels to scroll per click
 
-// leftBtn.addEventListener('click', () => {
-//     productCard.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-// });
+leftArrow.addEventListener("click", () => {
+    productCard.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+});
+rightArrow.addEventListener("click", () => {
+    productCard.scrollBy({ left: scrollAmount, behavior: "smooth" });
+});
 
-// rightBtn.addEventListener('click', () => {
-//     productCard.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-// });
